@@ -9,7 +9,7 @@ pipeline {
 				}
 				stage('Build') {
     					steps {
-    					    bat "\"${tool 'MSBuild'}\" FirstStudy.sln /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:SkipInvalidConfigurations=true /t:build /p:Configuration=Release /p:publishUrl=c:\\inetpub\\backend"
+    					    bat "\"${MSBuild}\" FirstStudy.sln /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:SkipInvalidConfigurations=true /t:build /p:Configuration=Release /p:publishUrl=c:\\inetpub\\backend"
     					}
 				}
 			}
