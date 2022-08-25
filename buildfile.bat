@@ -1,0 +1,1 @@
+msbuild  /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /t:build /p:Configuration=Release /p:publishUrl=c:\\inetpub\\backend.firststudyint.com"
